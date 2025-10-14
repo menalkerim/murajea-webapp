@@ -1,13 +1,19 @@
 import React from "react";
+import { Button } from "@/components/ui/button";
+import { ArrowUpIcon } from "lucide-react";
+
+export function ButtonDefault({ label }) {
+  return <Button variant="sky">{label}</Button>;
+}
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-gray-800 text-white p-4 flex items-center ">
+    <nav className="w-full bg-white text-black p-4 flex justify-between px-8 py-4 items-center  rounded-md">
       {/* Left-aligned brand/logo */}
-      <h1 className="text-2xl font-bold mr-10">MyApp</h1>
+      <h1 className="text-2xl font-bold mr-10">Murajea Webapp</h1>
 
       {/* Left-aligned links */}
-      <div className="flex gap-6">
+      <div className="flex space-x-8 ">
         <a href="#home" className="hover:text-gray-300">
           Home
         </a>
@@ -20,6 +26,10 @@ export default function Navbar() {
         <a href="#contact" className="hover:text-gray-300">
           Contact
         </a>
+      </div>
+      <div className="flex space-x-3">
+        <Button variant="sky">Register</Button>
+        <Button variant="secondary">Login</Button>
       </div>
     </nav>
   );
