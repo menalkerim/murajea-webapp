@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
 import HomePage from "./pages/homepage";
+import Home from "./pages/home";
 
 function App() {
   return (
