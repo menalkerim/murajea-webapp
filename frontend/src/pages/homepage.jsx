@@ -6,14 +6,15 @@ import { CheckCircle, Users, BookOpen, BarChart3 } from "lucide-react";
 
 import heroBg from "../assets/1.jpg";
 import hero from "../assets/2.jpg";
+import main from "../assets/3.jpg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full min-h-screen text-gray-800">
+    <div className="flex flex-col w-full min-h-screen text-gray-800 pt-20">
       {/* ===== HERO SECTION ===== */}
       <section
-        className="text-white py-24 px-6 text-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${hero})` }}
+        className="text-white w-full py-24 px-6 text-center bg-cover bg-center pt-10"
+        style={{ backgroundImage: `url(${main})` }}
       >
         <div className="bg-black/50 py-12 px-4 rounded-2xl max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -40,8 +41,8 @@ export default function Home() {
       {/* ===== KEY BENEFITS ===== */}
       <section
         id="benefits"
-        className="py-20 bg-cover bg-center text-center text-white"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        className="py-20 bg-cover bg-center text-center text-white mt-10"
+        style={{ backgroundImage: `url(${hero})` }}
       >
         <div className="bg-black/60 py-16 px-4 rounded-2xl max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12">Why Choose Our Platform?</h2>
