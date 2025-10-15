@@ -3,14 +3,14 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import NavBar from "./components/navbar/NavBar";
-import HomePage from "./pages/homepage";
-import Home from "./pages/home";
+import HomePage from "./pages/home";
+import Home from "./pages/homepage";
 
 function App() {
   return (
     <div>
       <NavBar />
-      <HomePage />
+      <Home />
     </div>
   );
 }

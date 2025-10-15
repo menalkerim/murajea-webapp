@@ -5,6 +5,7 @@ import { CheckCircle, Users, BookOpen, BarChart3 } from "lucide-react";
 // ✅ Import your background images from src/assets
 
 import heroBg from "../assets/1.jpg";
+import hero from "../assets/2.jpg";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       {/* ===== HERO SECTION ===== */}
       <section
         className="text-white py-24 px-6 text-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{ backgroundImage: `url(${hero})` }}
       >
         <div className="bg-black/50 py-12 px-4 rounded-2xl max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
@@ -129,6 +130,26 @@ export default function Home() {
               Contact Us
             </Button>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 px-6 bg-white text-center">
+        <h2 className="text-3xl font-bold mb-12">Core Features</h2>
+        <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          {[
+            { title: "User Management", icon: Users },
+            { title: "Course Creation", icon: BookOpen },
+            { title: "Attendance Tracking", icon: CheckCircle },
+            { title: "Reporting & Analytics", icon: BarChart3 },
+          ].map((feature, idx) => (
+            <div
+              key={idx}
+              className="p-6 border rounded-xl hover:shadow-lg transition"
+            >
+              <feature.icon className="w-10 h-10 mx-auto text-sky-500 mb-4" />
+              <h3 className="font-semibold text-lg">{feature.title}</h3>
+            </div>
+          ))}
         </div>
       </section>
 

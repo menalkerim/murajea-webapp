@@ -9,7 +9,7 @@ export function ButtonDefault({ label }) {
 export default function Navbar() {
   return (
     <nav className="w-full bg-white text-black p-4 flex justify-between px-8 py-4 items-center  rounded-md">
-      <h1 className="text-2xl font-bold mr-10">Murajea Webapp</h1>
+      <h1 className="text-2xl font-bold mr-10">Muraje'a </h1>
 
       <div className="flex space-x-4 ">
         <a href="#home" className="hover:text-gray-300">
