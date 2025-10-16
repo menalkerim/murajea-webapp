@@ -5,6 +5,7 @@ import { CheckCircle, Users, BookOpen, BarChart3 } from "lucide-react";
 import heroBg from "../assets/1.jpg";
 import hero from "../assets/2.jpg";
 import main from "../assets/3.jpg";
+import testimonial from "../assets/4.jpg";
 
 export default function Home() {
   return (
@@ -155,7 +156,7 @@ export default function Home() {
       {/* Testimonials */}
       <section
         className="py-16 px-6 bg-cover bg-center text-white text-center"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{ backgroundImage: `url(${testimonial})` }}
       >
         <div className="bg-black/60 py-16 px-4 rounded-2xl max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12">What People Are Saying</h2>
