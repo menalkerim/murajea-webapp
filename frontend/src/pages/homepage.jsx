@@ -2,8 +2,6 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Users, BookOpen, BarChart3 } from "lucide-react";
 
-// ✅ Import your background images from src/assets
-
 import heroBg from "../assets/1.jpg";
 import hero from "../assets/2.jpg";
 import main from "../assets/3.jpg";
@@ -11,7 +9,7 @@ import main from "../assets/3.jpg";
 export default function Home() {
   return (
     <div className="flex flex-col w-full min-h-screen text-gray-800 pt-20">
-      {/* ===== HERO SECTION ===== */}
+      {/* Hero Sections*/}
       <section
         className="text-white w-full py-24 px-6 text-center bg-cover bg-center pt-10"
         style={{ backgroundImage: `url(${main})` }}
@@ -38,7 +36,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== KEY BENEFITS ===== */}
+      {/* Key Benefits */}
       <section
         id="benefits"
         className="py-20 bg-cover bg-center text-center text-white mt-10"
@@ -75,7 +73,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== HOW IT WORKS ===== */}
+      {/* How it works */}
       <section
         className="py-16 px-6 text-center bg-cover bg-center text-white"
         style={{ backgroundImage: `url(${heroBg})` }}
@@ -107,7 +105,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== FOR TEACHERS & INSTITUTIONS ===== */}
+      {/* For teachers and Institutions */}
       <section
         className="py-16 px-6 text-center bg-cover bg-center text-white"
         style={{ backgroundImage: `url(${heroBg})` }}
@@ -125,7 +123,7 @@ export default function Home() {
               Request a Demo
             </Button>
             <Button
-              variant="outline"
+              variant="defualt"
               className="border-white text-white hover:bg-white/10"
             >
               Contact Us
@@ -133,7 +131,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      {/*Core Features*/}
       <section className="py-16 px-6 bg-white text-center">
         <h2 className="text-3xl font-bold mb-12">Core Features</h2>
         <div className="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -154,7 +152,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== TESTIMONIALS ===== */}
+      {/* Testimonials */}
       <section
         className="py-16 px-6 bg-cover bg-center text-white text-center"
         style={{ backgroundImage: `url(${heroBg})` }}
@@ -191,7 +189,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== FOOTER ===== */}
+      {/* Footer */}
       <footer className="bg-gray-900 text-white text-center py-6">
         <p>© {new Date().getFullYear()} Murajea WebApp. All rights reserved.</p>
       </footer>
