@@ -12,6 +12,7 @@ export default function Home() {
     <div className="flex flex-col w-full min-h-screen text-gray-800 pt-20">
       {/* Hero Sections*/}
       <section
+        id="home"
         className="text-white w-full py-24 px-6 text-center bg-cover bg-center pt-10"
         style={{ backgroundImage: `url(${main})` }}
       >
@@ -39,7 +40,7 @@ export default function Home() {
 
       {/* Key Benefits */}
       <section
-        id="benefits"
+        id="services"
         className="py-20 bg-cover bg-center text-center text-white mt-10"
         style={{ backgroundImage: `url(${hero})` }}
       >
